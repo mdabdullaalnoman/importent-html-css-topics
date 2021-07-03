@@ -1,0 +1,78 @@
+Code Merge process
+
+Asus@DESKTOP-JCLN4FC MINGW64 /e/Web Developments/Partice Projects/Importent html css topics (master)
+$ git branch -a
+  add-text
+* master
+  remotes/origin/master
+
+Asus@DESKTOP-JCLN4FC MINGW64 /e/Web Developments/Partice Projects/Importent html css topics (master)
+$ git checkout add-text
+Switched to branch 'add-text'
+M       importent-css-topic.html
+
+Asus@DESKTOP-JCLN4FC MINGW64 /e/Web Developments/Partice Projects/Importent html css topics (add-text)
+$ git add .
+
+Asus@DESKTOP-JCLN4FC MINGW64 /e/Web Developments/Partice Projects/Importent html css topics (add-text)
+$ git commit -m"another branch added"
+[add-text 0386244] another branch added
+ 1 file changed, 2 insertions(+)
+
+Asus@DESKTOP-JCLN4FC MINGW64 /e/Web Developments/Partice Projects/Importent html css topics (add-text)
+$ git push
+fatal: The current branch add-text has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin add-text
+
+
+Asus@DESKTOP-JCLN4FC MINGW64 /e/Web Developments/Partice Projects/Importent html css topics (add-text)
+$ git push --set-upstream origin add-text
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 370 bytes | 370.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'add-text' on GitHub by visiting:
+remote:      https://github.com/mdabdullaalnoman/importent-html-css-topics/pull/new/add-text
+remote:
+To https://github.com/mdabdullaalnoman/importent-html-css-topics.git
+ * [new branch]      add-text -> add-text
+Branch 'add-text' set up to track remote branch 'add-text' from 'origin'.
+
+Asus@DESKTOP-JCLN4FC MINGW64 /e/Web Developments/Partice Projects/Importent html css topics (add-text)
+$ git branch
+* add-text
+  master
+
+Asus@DESKTOP-JCLN4FC MINGW64 /e/Web Developments/Partice Projects/Importent html css topics (add-text)
+$ git chechout master
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Asus@DESKTOP-JCLN4FC MINGW64 /e/Web Developments/Partice Projects/Importent html css topics (add-text)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Asus@DESKTOP-JCLN4FC MINGW64 /e/Web Developments/Partice Projects/Importent html css topics (master)
+$ git merge add-text
+Updating 81f1e35..0386244
+Fast-forward
+ importent-css-topic.html | 2 ++
+ 1 file changed, 2 insertions(+)
+
+Asus@DESKTOP-JCLN4FC MINGW64 /e/Web Developments/Partice Projects/Importent html css topics (master)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mdabdullaalnoman/importent-html-css-topics.git
+   81f1e35..0386244  master -> master
+
+Asus@DESKTOP-JCLN4FC MINGW64 /e/Web Developments/Partice Projects/Importent html css topics (master)
+$
